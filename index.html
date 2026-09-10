@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coinspira — Expediente abierto</title>
+  <meta name="description" content="Coinspira — Planeamos viajes que necesitan más preguntas antes de reservar.">
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black:#0a0a0a;
+      --black-soft:#131313;
+      --white:#ffffff;
+      --cream:#f4f0e8;
+      --cream-2:#ebe5d9;
+      --orange:#ff6a1a;
+      --line:#2c2c2c;
+      --muted:#bdb7af;
+      --muted-dark:#6d675f;
+      --max:1180px;
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Inter, Arial, sans-serif; background:var(--black); color:var(--white); }
+    img { display:block; max-width:100%; height:auto; }
+    .wrap { width:min(var(--max), calc(100% - 40px)); margin:0 auto; }
+    .site-header { padding:24px 0; border-bottom:1px solid var(--line); background:var(--black); position:sticky; top:0; z-index:10; }
+    .site-header .wrap { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .logo-plaque { background:transparent; padding:0; border-radius:0; box-shadow:none; }
+    .logo { width:min(350px, 58vw); }
+    .site-status { color:var(--muted); font-size:12px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; }
+
+    .hero { background:var(--black); }
+    .hero-grid { display:grid; grid-template-columns:1.05fr .95fr; gap:48px; min-height:calc(100vh - 96px); align-items:center; padding:54px 0 64px; }
+    .eyebrow { color:var(--orange); font-size:13px; font-weight:900; letter-spacing:.1em; text-transform:uppercase; margin-bottom:22px; }
+    h1 { margin:0 0 28px; font-size:clamp(52px, 7vw, 108px); line-height:.9; letter-spacing:-.055em; max-width:800px; }
+    .descriptor { margin:0; font-size:clamp(22px, 2.2vw, 30px); line-height:1.35; color:var(--muted); max-width:760px; }
+    .descriptor strong { color:var(--white); font-weight:700; }
+    .right-card { background:var(--cream); color:var(--black); padding:34px; border-radius:2px; box-shadow:0 0 0 1px rgba(0,0,0,.08); align-self:center; }
+    .case-no { color:var(--muted-dark); font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.11em; margin-bottom:18px; }
+    .right-card h2 { margin:0 0 18px; font-size:clamp(34px, 4vw, 58px); line-height:.98; letter-spacing:-.045em; }
+    .right-card p { margin:0 0 14px; font-size:18px; line-height:1.55; color:#3b3834; }
+    .right-card p strong { color:var(--black); }
+    .cta { display:inline-flex; align-items:center; justify-content:center; margin-top:12px; padding:18px 22px; background:var(--black); color:var(--white); text-decoration:none; font-weight:900; font-size:18px; border-radius:2px; border-bottom:5px solid var(--orange); }
+    .small { margin-top:14px; font-size:13px; line-height:1.5; color:var(--muted-dark); }
+
+    .future { background:var(--black-soft); border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:72px 0 80px; }
+    .future-head { display:flex; justify-content:space-between; align-items:end; gap:24px; margin-bottom:34px; }
+    .future-head h3 { margin:0; font-size:clamp(36px, 4.3vw, 64px); line-height:.95; letter-spacing:-.04em; }
+    .future-head .note { color:var(--orange); font-size:12px; font-weight:800; letter-spacing:.1em; text-transform:uppercase; }
+    .items { display:grid; grid-template-columns:repeat(3, 1fr); gap:18px; }
+    .item { background:#111; border:1px solid #2a2a2a; min-height:240px; padding:24px; display:flex; flex-direction:column; justify-content:space-between; }
+    .item-top { color:var(--orange); font-size:12px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+    .item h4 { margin:26px 0 12px; font-size:clamp(25px, 2.4vw, 36px); line-height:1.02; letter-spacing:-.03em; }
+    .item p { margin:0; font-size:16px; line-height:1.55; color:#c7c0b7; }
+    .item-foot { margin-top:22px; font-size:12px; color:#8f8a84; font-weight:800; text-transform:uppercase; letter-spacing:.08em; }
+
+    .footer { background:var(--black); padding:28px 0 36px; }
+    .footer .wrap { display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; color:#8f8a84; font-size:13px; }
+
+    @media (max-width: 860px) {
+      .hero-grid { grid-template-columns:1fr; min-height:auto; padding:40px 0 54px; }
+      .future-head { display:block; }
+      .future-head .note { display:block; margin-top:10px; }
+      .items { grid-template-columns:1fr; }
+    }
+
+    @media (max-width: 560px) {
+      .wrap { width:min(var(--max), calc(100% - 28px)); }
+      .site-header .wrap { align-items:flex-start; flex-direction:column; }
+      .logo { width:min(290px, 100%); }
+      .right-card { padding:24px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="logo-plaque">
+        <img class="logo" src="assets/coinspira-logo.png" alt="Coinspira">
+      </div>
+      <div class="site-status">Sitio en construcción</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="left-copy">
+          <div class="eyebrow">Expediente abierto</div>
+          <h1>Planeamos viajes que necesitan más preguntas antes de reservar.</h1>
+          <p class="descriptor"><strong>Edad. Movilidad. Salud. Familias. Logística poco común.</strong><br><br>No empezamos por lo que no se puede. Empezamos por entender qué tendría que pasar para que sí.</p>
+        </div>
+
+        <aside class="right-card">
+          <div class="case-no">Coinspira · Primeros casos · 2026</div>
+          <h2>¿Qué estás tramando?</h2>
+          <p><strong>Actualmente estamos aceptando un número limitado de primeros viajes.</strong></p>
+          <p>Estamos abriendo una primera etapa para entender casos reales y acompañar viajes que necesitan más estrategia antes de reservar.</p>
+          <a class="cta" href="mailto:hola@conspireinspire.com?subject=Quiero%20ser%20parte%20de%20los%20primeros%20viajes%20Coinspira&body=Hola%20Coinspira%2C%0A%0ATengo%20un%20viaje%20en%20mente.%20Les%20cuento%3A%0A%0ADestino%3A%0AFechas%20aproximadas%3A%0AQui%C3%A9nes%20viajan%3A%0AQu%C3%A9%20hace%20este%20viaje%20menos%20simple%3A%0A%0AGracias.">Cuéntanos tu viaje →</a>
+          <div class="small">Si tu caso encaja con esta etapa, te contactamos para una primera conversación.</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="future">
+      <div class="wrap">
+        <div class="future-head">
+          <h3>En construcción.</h3>
+          <span class="note">Lo que viene</span>
+        </div>
+        <div class="items">
+          <article class="item">
+            <div>
+              <div class="item-top">Archivo 01</div>
+              <h4>Historias y Recursos</h4>
+              <p>Casos, guías e información útil para investigar con más contexto.</p>
+            </div>
+            <div class="item-foot">Próximamente</div>
+          </article>
+          <article class="item">
+            <div>
+              <div class="item-top">Archivo 02</div>
+              <h4>Periplo</h4>
+              <p>Planeamos tu estrategia de viaje antes de reservar: qué sabemos, qué falta y cómo avanzar.</p>
+            </div>
+            <div class="item-foot">En desarrollo</div>
+          </article>
+          <article class="item">
+            <div>
+              <div class="item-top">Archivo 03</div>
+              <h4>Periplo + Coinspirador</h4>
+              <p>Concierge, reservas y coordinación para viajes que necesitan más manos.</p>
+            </div>
+            <div class="item-foot">En desarrollo</div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <span>Coinspira · Ahorita no. Así sí.</span>
+      <span>hola@conspireinspire.com</span>
+    </div>
+  </footer>
+</body>
+</html>
