@@ -1,5 +1,7 @@
 # Coinspira — MVP website
 
+> Esta carpeta ahora contiene la conversión a Next.js. Para desarrollo, admin, CMS y configuración consulta [IMPLEMENTATION.md](IMPLEMENTATION.md). Las instrucciones de abajo corresponden al HTML original.
+
 This folder is ready to publish as a static website with GitHub + Vercel.
 
 ## Files

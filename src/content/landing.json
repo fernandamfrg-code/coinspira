@@ -1,0 +1,453 @@
+{
+  "body": "\n<header class=\"site-header\">\n  <div class=\"wrap header-inner\">\n    <a class=\"brand\" href=\"#top\" aria-label=\"Coinspira\">\n      <img src=\"/assets/fer-image-1.png\" alt=\"Coinspira\">\n    </a>\n    <div class=\"header-actions\">\n      <a class=\"nav-link t\" href=\"#aportar\" data-cms=\"text-1\" data-es=\"Aportar\" data-en=\"Contribute\">Aportar</a>\n      <a class=\"nav-link t\" href=\"#que-es\" data-cms=\"text-2\" data-es=\"Qué es\" data-en=\"What it is\">Qué es</a>\n      <a class=\"header-cta t\" href=\"#cliente\" data-cms=\"text-3\" data-es=\"Planear un viaje\" data-en=\"Plan a trip\">Planear un viaje</a>\n      <div class=\"lang\" aria-label=\"Language\">\n        <button type=\"button\" data-lang=\"es\" class=\"active\">ES</button>\n        <button type=\"button\" data-lang=\"en\">EN</button>\n      </div>\n    </div>\n  </div>\n</header>\n\n<main id=\"top\">\n<section class=\"hero\">\n  <div class=\"wrap hero-grid\">\n    <div>\n      <div class=\"eyebrow t\" data-cms=\"text-4\" data-es=\"EXPEDIENTE ABIERTO\" data-en=\"OPEN CASE\">EXPEDIENTE ABIERTO</div>\n      <h1 class=\"t\" data-cms=\"text-5\" data-es=\"Hay viajes que necesitan más preguntas antes de reservar.\" data-en=\"Some trips need more questions before you book.\">Hay viajes que necesitan más preguntas antes de reservar.</h1>\n    </div>\n    <div class=\"hero-side\">\n      <p class=\"descriptor t\" data-cms=\"text-6\" data-es=\"Edad. Movilidad. Salud. Familia. Distancias. Logística poco común.\" data-en=\"Age. Mobility. Health. Family. Distance. Unusual logistics.\">Edad. Movilidad. Salud. Familia. Distancias. Logística poco común.</p>\n      <p class=\"hero-copy t\" data-cms=\"text-7\" data-es=\"Estamos reuniendo las historias, trucos, proveedores y recursos que han hecho posibles los viajes difíciles de planear.\" data-en=\"We are gathering the stories, workarounds, providers and resources that have made difficult-to-plan trips possible.\">Estamos reuniendo las historias, trucos, proveedores y recursos que han hecho posibles los viajes difíciles de planear.</p>\n      <div class=\"hero-actions\">\n        <a class=\"btn btn-primary t\" href=\"#cliente\" data-cms=\"text-8\" data-es=\"NECESITO AYUDA CON UN VIAJE →\" data-en=\"I NEED HELP WITH A TRIP →\">NECESITO AYUDA CON UN VIAJE →</a>\n        <a class=\"btn t\" href=\"#aportar\" data-cms=\"text-9\" data-es=\"QUIERO APORTAR →\" data-en=\"I WANT TO CONTRIBUTE →\">QUIERO APORTAR →</a>\n      </div>\n      <div class=\"micro t\" data-cms=\"text-10\" data-es=\"Sitio en construcción · Actualmente aceptamos un número limitado de primeros viajes.\" data-en=\"Site in progress · We are currently accepting a limited number of early trips.\">Sitio en construcción · Actualmente aceptamos un número limitado de primeros viajes.</div>\n    </div>\n  </div>\n</section>\n\n<section class=\"choice\" id=\"cliente\">\n  <div class=\"wrap\">\n    <div class=\"section-kicker t\" data-cms=\"text-11\" data-es=\"EMPIEZA POR AQUÍ\" data-en=\"START HERE\">EMPIEZA POR AQUÍ</div>\n    <h2 class=\"section-title t\" data-cms=\"text-12\" data-es=\"¿Qué necesitas hoy?\" data-en=\"What do you need today?\">¿Qué necesitas hoy?</h2>\n    <p class=\"section-intro t\" data-cms=\"text-13\" data-es=\"Si estás planeando un viaje, no tienes que pasar por la investigación primero. Cuéntanos el caso directamente. Si vienes a compartir experiencia o conocimiento, también hay una entrada clara para ti.\" data-en=\"If you are planning a trip, you do not need to go through the research first. Tell us about the case directly. If you are here to share experience or knowledge, there is a clear route for you too.\">Si estás planeando un viaje, no tienes que pasar por la investigación primero. Cuéntanos el caso directamente. Si vienes a compartir experiencia o conocimiento, también hay una entrada clara para ti.</p>\n\n    <div class=\"choice-grid\">\n      <article class=\"choice-card primary\">\n        <div>\n          <div class=\"choice-number t\" data-cms=\"text-14\" data-es=\"01 · VIAJERO / FAMILIA\" data-en=\"01 · TRAVELER / FAMILY\">01 · VIAJERO / FAMILIA</div>\n          <h2 class=\"t\" data-cms=\"text-15\" data-es=\"Quiero planear un viaje.\" data-en=\"I want to plan a trip.\">Quiero planear un viaje.</h2>\n          <p class=\"t\" data-cms=\"text-16\" data-es=\"Cuéntanos qué estás tramando y qué hace que el viaje necesite más preparación. Revisaremos si Coinspira puede ayudarte y te contactaremos.\" data-en=\"Tell us what you are plotting and what makes the trip require more preparation. We will review whether Coinspira can help and get in touch.\">Cuéntanos qué estás tramando y qué hace que el viaje necesite más preparación. Revisaremos si Coinspira puede ayudarte y te contactaremos.</p>\n        </div>\n        <button class=\"btn choice-action t\" type=\"button\" data-toggle=\"client-form\" data-cms=\"text-17\" data-es=\"CUÉNTANOS QUÉ ESTÁS TRAMANDO →\" data-en=\"TELL US WHAT YOU'RE PLOTTING →\">CUÉNTANOS QUÉ ESTÁS TRAMANDO →</button>\n      </article>\n\n      <article class=\"choice-card\">\n        <div>\n          <div class=\"choice-number t\" data-cms=\"text-18\" data-es=\"02 · COMUNIDAD\" data-en=\"02 · COMMUNITY\">02 · COMUNIDAD</div>\n          <h2 class=\"t\" data-cms=\"text-19\" data-es=\"Quiero ayudar a construir esto.\" data-en=\"I want to help build this.\">Quiero ayudar a construir esto.</h2>\n          <p class=\"t\" data-cms=\"text-20\" data-es=\"Comparte un viaje que ya hiciste, participa en una conversación de investigación o recomiéndanos a alguien que facilita este tipo de viajes.\" data-en=\"Share a trip you have taken, join a research conversation or recommend someone who makes this kind of travel easier.\">Comparte un viaje que ya hiciste, participa en una conversación de investigación o recomiéndanos a alguien que facilita este tipo de viajes.</p>\n        </div>\n        <a class=\"btn choice-action t\" href=\"#aportar\" data-cms=\"text-21\" data-es=\"VER LAS 3 FORMAS DE APORTAR →\" data-en=\"SEE 3 WAYS TO CONTRIBUTE →\">VER LAS 3 FORMAS DE APORTAR →</a>\n      </article>\n    </div>\n\n    <div id=\"client-form\" class=\"form-panel light\">\n      <div class=\"form-head\">\n        <div>\n          <h3 class=\"t\" data-cms=\"text-22\" data-es=\"Cuéntanos qué estás tramando.\" data-en=\"Tell us what you're plotting.\">Cuéntanos qué estás tramando.</h3>\n          <p class=\"t\" data-cms=\"text-23\" data-es=\"No necesitamos tu expediente completo. Solo lo suficiente para entender el viaje y saber cómo continuar.\" data-en=\"We do not need your full file. Just enough to understand the trip and know how to continue.\">No necesitamos tu expediente completo. Solo lo suficiente para entender el viaje y saber cómo continuar.</p>\n        </div>\n        <button type=\"button\" class=\"close-form\" data-close=\"client-form\" aria-label=\"Cerrar\">×</button>\n      </div>\n      <form class=\"capture-form\" data-type-es=\"Nuevo viaje / cliente potencial\" data-type-en=\"New trip / potential client\">\n        <div class=\"form-grid\">\n          <div class=\"field\"><label class=\"t\" data-cms=\"text-24\" data-es=\"Nombre *\" data-en=\"Name *\">Nombre *</label><input required name=\"Nombre / Name\" type=\"text\" autocomplete=\"name\"></div>\n          <div class=\"field\"><label class=\"t\" data-cms=\"text-25\" data-es=\"Email *\" data-en=\"Email *\">Email *</label><input required name=\"Email\" type=\"email\" autocomplete=\"email\"></div>\n          <div class=\"field\"><label class=\"t\" data-cms=\"text-26\" data-es=\"WhatsApp / teléfono\" data-en=\"WhatsApp / phone\">WhatsApp / teléfono</label><input name=\"WhatsApp / Phone\" type=\"tel\" autocomplete=\"tel\"></div>\n          <div class=\"field\"><label class=\"t\" data-cms=\"text-27\" data-es=\"¿Para quién estás planeando?\" data-en=\"Who are you planning for?\">¿Para quién estás planeando?</label>\n            <select name=\"Planning for\">\n              <option class=\"t\" value=\"Para mí / Myself\" data-cms=\"text-28\" data-es=\"Para mí\" data-en=\"Myself\">Para mí</option>\n              <option class=\"t\" value=\"Familiar / Family member\" data-cms=\"text-29\" data-es=\"Un familiar\" data-en=\"A family member\">Un familiar</option>\n              <option class=\"t\" value=\"Pareja o amigo / Partner or friend\" data-cms=\"text-30\" data-es=\"Pareja o amigo\" data-en=\"Partner or friend\">Pareja o amigo</option>\n              <option class=\"t\" value=\"Grupo / Group\" data-cms=\"text-31\" data-es=\"Un grupo\" data-en=\"A group\">Un grupo</option>\n              <option class=\"t\" value=\"Otro / Other\" data-cms=\"text-32\" data-es=\"Otro\" data-en=\"Other\">Otro</option>\n            </select>\n          </div>\n          <div class=\"field\"><label class=\"t\" data-cms=\"text-33\" data-es=\"Destino o idea de viaje\" data-en=\"Destination or trip idea\">Destino o idea de viaje</label><input name=\"Destination / Trip idea\" type=\"text\"></div>\n          <div class=\"field\"><label class=\"t\" data-cms=\"text-34\" data-es=\"Fechas o periodo aproximado\" data-en=\"Dates or approximate timing\">Fechas o periodo aproximado</label><input name=\"Dates / Timing\" type=\"text\"></div>\n          <div class=\"field full\">\n            <label class=\"t\" data-cms=\"text-35\" data-es=\"¿Qué necesita más planeación?\" data-en=\"What needs more planning?\">¿Qué necesita más planeación?</label>\n            <div class=\"pill-grid\">\n              <label class=\"pill\"><input type=\"checkbox\" name=\"Needs[]\" value=\"Movilidad / Mobility\"><span class=\"t\" data-cms=\"text-36\" data-es=\"Movilidad\" data-en=\"Mobility\">Movilidad</span></label>\n              <label class=\"pill\"><input type=\"checkbox\" name=\"Needs[]\" value=\"Salud o medicación / Health or medication\"><span class=\"t\" data-cms=\"text-37\" data-es=\"Salud / medicación\" data-en=\"Health / medication\">Salud / medicación</span></label>\n              <label class=\"pill\"><input type=\"checkbox\" name=\"Needs[]\" value=\"Edad o energía / Age or stamina\"><span class=\"t\" data-cms=\"text-38\" data-es=\"Edad / energía\" data-en=\"Age / stamina\">Edad / energía</span></label>\n              <label class=\"pill\"><input type=\"checkbox\" name=\"Needs[]\" value=\"Familia o acompañantes / Family or companions\"><span class=\"t\" data-cms=\"text-39\" data-es=\"Familia / acompañantes\" data-en=\"Family / companions\">Familia / acompañantes</span></label>\n              <label class=\"pill\"><input type=\"checkbox\" name=\"Needs[]\" value=\"Distancias o transporte / Distances or transport\"><span class=\"t\" data-cms=\"text-40\" data-es=\"Distancias / transporte\" data-en=\"Distances / transport\">Distancias / transporte</span></label>\n              <label class=\"pill\"><input type=\"checkbox\" name=\"Needs[]\" value=\"Proveedor especializado / Specialized provider\"><span class=\"t\" data-cms=\"text-41\" data-es=\"Proveedor especializado\" data-en=\"Specialized provider\">Proveedor especializado</span></label>\n              <label class=\"pill\"><input type=\"checkbox\" name=\"Needs[]\" value=\"Otro / Other\"><span class=\"t\" data-cms=\"text-42\" data-es=\"Otro\" data-en=\"Other\">Otro</span></label>\n            </div>\n          </div>\n          <div class=\"field full\"><label class=\"t\" data-cms=\"text-43\" data-es=\"En pocas palabras, ¿qué hace este viaje menos simple? *\" data-en=\"In a few words, what makes this trip less simple? *\">En pocas palabras, ¿qué hace este viaje menos simple? *</label><textarea required name=\"Trip context\"></textarea><div class=\"help t\" data-cms=\"text-44\" data-es=\"Para este primer contacto, evita compartir expedientes médicos, diagnósticos detallados u otra información sensible.\" data-en=\"For this first contact, please avoid sharing medical records, detailed diagnoses or other sensitive information.\">Para este primer contacto, evita compartir expedientes médicos, diagnósticos detallados u otra información sensible.</div></div>\n          <div class=\"field full\"><label class=\"check-row\"><input required type=\"checkbox\" name=\"Consent\" value=\"Yes\"><span class=\"t\" data-cms=\"text-45\" data-es=\"Acepto que Coinspira me contacte para dar seguimiento a este viaje.\" data-en=\"I agree that Coinspira may contact me to follow up on this trip.\">Acepto que Coinspira me contacte para dar seguimiento a este viaje.</span></label></div>\n        </div>\n        <div class=\"form-submit\"><button class=\"btn btn-primary t\" type=\"submit\" data-cms=\"text-46\" data-es=\"ENVIAR MI CASO →\" data-en=\"SEND MY CASE →\">ENVIAR MI CASO →</button><span class=\"submit-status\" aria-live=\"polite\"></span></div>\n      </form>\n    </div>\n  </div>\n</section>\n\n<section class=\"research\" id=\"aportar\">\n  <div class=\"wrap\">\n    <div class=\"section-kicker t\" data-cms=\"text-47\" data-es=\"AYÚDANOS A INVESTIGAR\" data-en=\"HELP US RESEARCH\">AYÚDANOS A INVESTIGAR</div>\n    <h2 class=\"section-title t\" data-cms=\"text-48\" data-es=\"Tres maneras de coinspirar.\" data-en=\"Three ways to coinspire.\">Tres maneras de coinspirar.</h2>\n    <p class=\"section-intro t\" data-cms=\"text-49\" data-es=\"Cada tipo de persona tiene su propio formulario. Abre solo el que te corresponda.\" data-en=\"Each type of participant has a different form. Open only the one that fits you.\">Cada tipo de persona tiene su propio formulario. Abre solo el que te corresponda.</p>\n\n    <div class=\"research-grid\">\n      <article class=\"actor\">\n        <button class=\"actor-button\" type=\"button\" data-toggle=\"story-form\">\n          <div><div class=\"actor-top t\" data-cms=\"text-50\" data-es=\"01 · EXPERIENCIA\" data-en=\"01 · EXPERIENCE\">01 · EXPERIENCIA</div><h3 class=\"t\" data-cms=\"text-51\" data-es=\"Hice un viaje así.\" data-en=\"I took a trip like this.\">Hice un viaje así.</h3><p class=\"t\" data-cms=\"text-52\" data-es=\"Cuéntanos qué lo hizo difícil, qué terminó funcionando y qué aprendiste. Puedes compartirlo de forma anónima.\" data-en=\"Tell us what made it difficult, what ended up working and what you learned. You can share anonymously.\">Cuéntanos qué lo hizo difícil, qué terminó funcionando y qué aprendiste. Puedes compartirlo de forma anónima.</p></div><div class=\"actor-plus\">+</div>\n        </button>\n        <div id=\"story-form\" class=\"form-panel\">\n          <div class=\"form-head\"><div><h3 class=\"t\" data-cms=\"text-53\" data-es=\"Tu experiencia.\" data-en=\"Your experience.\">Tu experiencia.</h3><p class=\"t\" data-cms=\"text-54\" data-es=\"Lo importante es lo que aprendiste, no tu identidad.\" data-en=\"What matters is what you learned, not your identity.\">Lo importante es lo que aprendiste, no tu identidad.</p></div><button type=\"button\" class=\"close-form\" data-close=\"story-form\">×</button></div>\n          <form class=\"capture-form\" data-type-es=\"Historia de viaje\" data-type-en=\"Trip story\">\n            <div class=\"form-grid\">\n              <div class=\"field\"><label class=\"t\" data-cms=\"text-55\" data-es=\"Nombre (opcional)\" data-en=\"Name (optional)\">Nombre (opcional)</label><input name=\"Name (optional)\" type=\"text\"></div>\n              <div class=\"field\"><label class=\"t\" data-cms=\"text-56\" data-es=\"Email (opcional)\" data-en=\"Email (optional)\">Email (opcional)</label><input name=\"Email (optional)\" type=\"email\"></div>\n              <div class=\"field full\"><label class=\"t\" data-cms=\"text-57\" data-es=\"¿Qué viaje fue? *\" data-en=\"What trip was it? *\">¿Qué viaje fue? *</label><input required name=\"Trip\" type=\"text\"></div>\n              <div class=\"field full\"><label class=\"t\" data-cms=\"text-58\" data-es=\"¿Qué lo hizo difícil de planear? *\" data-en=\"What made it difficult to plan? *\">¿Qué lo hizo difícil de planear? *</label><textarea required name=\"What made it difficult\"></textarea></div>\n              <div class=\"field full\"><label class=\"t\" data-cms=\"text-59\" data-es=\"¿Qué terminó funcionando? *\" data-en=\"What ended up working? *\">¿Qué terminó funcionando? *</label><textarea required name=\"What worked\"></textarea></div>\n              <div class=\"field full\"><label class=\"t\" data-cms=\"text-60\" data-es=\"¿Qué aprendiste que le serviría a alguien más?\" data-en=\"What did you learn that could help someone else?\">¿Qué aprendiste que le serviría a alguien más?</label><textarea name=\"Lessons\"></textarea></div>\n              <div class=\"field full\"><label class=\"check-row\"><input type=\"checkbox\" name=\"Can contact\" value=\"Yes\"><span class=\"t\" data-cms=\"text-61\" data-es=\"Pueden contactarme si tienen una pregunta sobre esta historia.\" data-en=\"You may contact me if you have a question about this story.\">Pueden contactarme si tienen una pregunta sobre esta historia.</span></label></div>\n            </div>\n            <div class=\"form-submit\"><button class=\"btn btn-light t\" type=\"submit\" data-cms=\"text-62\" data-es=\"ENVIAR HISTORIA →\" data-en=\"SEND STORY →\">ENVIAR HISTORIA →</button><span class=\"submit-status\" aria-live=\"polite\"></span></div>\n          </form>\n        </div>\n      </article>\n\n      <article class=\"actor\">\n        <button class=\"actor-button\" type=\"button\" data-toggle=\"research-form\">\n          <div><div class=\"actor-top t\" data-cms=\"text-63\" data-es=\"02 · INVESTIGACIÓN\" data-en=\"02 · RESEARCH\">02 · INVESTIGACIÓN</div><h3 class=\"t\" data-cms=\"text-64\" data-es=\"Quiero participar.\" data-en=\"I want to participate.\">Quiero participar.</h3><p class=\"t\" data-cms=\"text-65\" data-es=\"Estamos conversando con viajeros y familias para entender cómo preparan viajes que requieren más planeación. La llamada dura 15 minutos.\" data-en=\"We are speaking with travelers and families to understand how they prepare trips that require more planning. The call takes 15 minutes.\">Estamos conversando con viajeros y familias para entender cómo preparan viajes que requieren más planeación. La llamada dura 15 minutos.</p></div><div class=\"actor-plus\">+</div>\n        </button>\n        <div id=\"research-form\" class=\"form-panel\">\n          <div class=\"form-head\"><div><h3 class=\"t\" data-cms=\"text-66\" data-es=\"Participa en la investigación.\" data-en=\"Join the research.\">Participa en la investigación.</h3><p class=\"t\" data-cms=\"text-67\" data-es=\"Déjanos lo mínimo para entender tu caso y poder coordinar una conversación breve.\" data-en=\"Leave us the minimum information needed to understand your case and coordinate a short conversation.\">Déjanos lo mínimo para entender tu caso y poder coordinar una conversación breve.</p></div><button type=\"button\" class=\"close-form\" data-close=\"research-form\">×</button></div>\n          <form class=\"capture-form\" data-type-es=\"Participante de investigación\" data-type-en=\"Research participant\">\n            <div class=\"form-grid\">\n              <div class=\"field\"><label class=\"t\" data-cms=\"text-68\" data-es=\"Nombre *\" data-en=\"Name *\">Nombre *</label><input required name=\"Name\" type=\"text\"></div>\n              <div class=\"field\"><label class=\"t\" data-cms=\"text-69\" data-es=\"Email *\" data-en=\"Email *\">Email *</label><input required name=\"Email\" type=\"email\"></div>\n              <div class=\"field\"><label class=\"t\" data-cms=\"text-70\" data-es=\"WhatsApp / teléfono\" data-en=\"WhatsApp / phone\">WhatsApp / teléfono</label><input name=\"WhatsApp / Phone\" type=\"tel\"></div>\n              <div class=\"field\"><label class=\"t\" data-cms=\"text-71\" data-es=\"Ciudad / zona horaria\" data-en=\"City / time zone\">Ciudad / zona horaria</label><input name=\"City / Timezone\" type=\"text\"></div>\n              <div class=\"field full\"><label class=\"t\" data-cms=\"text-72\" data-es=\"¿Desde qué lugar participas?\" data-en=\"What is your role in this trip?\">¿Desde qué lugar participas?</label><select name=\"Role\"><option value=\"Traveler\" class=\"t\" data-cms=\"text-73\" data-es=\"Soy viajero/a\" data-en=\"I am the traveler\">Soy viajero/a</option><option value=\"Family\" class=\"t\" data-cms=\"text-74\" data-es=\"Soy familiar\" data-en=\"I am a family member\">Soy familiar</option><option value=\"Planner\" class=\"t\" data-cms=\"text-75\" data-es=\"Ayudé a planear\" data-en=\"I helped plan it\">Ayudé a planear</option><option value=\"Other\" class=\"t\" data-cms=\"text-76\" data-es=\"Otro\" data-en=\"Other\">Otro</option></select></div>\n              <div class=\"field full\"><label class=\"t\" data-cms=\"text-77\" data-es=\"En pocas palabras, ¿qué hace o hizo este viaje menos simple? *\" data-en=\"In a few words, what makes or made this trip less simple? *\">En pocas palabras, ¿qué hace o hizo este viaje menos simple? *</label><textarea required name=\"Research context\"></textarea></div>\n              <div class=\"field full\"><label class=\"check-row\"><input required type=\"checkbox\" name=\"Consent\" value=\"Yes\"><span class=\"t\" data-cms=\"text-78\" data-es=\"Acepto que Coinspira me contacte para coordinar una conversación de investigación de aproximadamente 15 minutos.\" data-en=\"I agree that Coinspira may contact me to coordinate a research conversation of approximately 15 minutes.\">Acepto que Coinspira me contacte para coordinar una conversación de investigación de aproximadamente 15 minutos.</span></label></div>\n            </div>\n            <div class=\"form-submit\"><button class=\"btn btn-light t\" type=\"submit\" data-cms=\"text-79\" data-es=\"QUIERO PARTICIPAR →\" data-en=\"I WANT TO PARTICIPATE →\">QUIERO PARTICIPAR →</button><span class=\"submit-status\" aria-live=\"polite\"></span></div>\n          </form>\n        </div>\n      </article>\n\n      <article class=\"actor\">\n        <button class=\"actor-button\" type=\"button\" data-toggle=\"provider-form\">\n          <div><div class=\"actor-top t\" data-cms=\"text-80\" data-es=\"03 · RECURSO\" data-en=\"03 · RESOURCE\">03 · RECURSO</div><h3 class=\"t\" data-cms=\"text-81\" data-es=\"Conozco a alguien que ayuda.\" data-en=\"I know someone who helps.\">Conozco a alguien que ayuda.</h3><p class=\"t\" data-cms=\"text-82\" data-es=\"¿Conoces o tienes un servicio, negocio o recurso que facilita este tipo de viajes? Queremos conocerlo.\" data-en=\"Do you know or run a service, business or resource that makes this kind of travel easier? We want to know it.\">¿Conoces o tienes un servicio, negocio o recurso que facilita este tipo de viajes? Queremos conocerlo.</p></div><div class=\"actor-plus\">+</div>\n        </button>\n        <div id=\"provider-form\" class=\"form-panel\">\n          <div class=\"form-head\"><div><h3 class=\"t\" data-cms=\"text-83\" data-es=\"Comparte un recurso.\" data-en=\"Share a resource.\">Comparte un recurso.</h3><p class=\"t\" data-cms=\"text-84\" data-es=\"Puede ser una empresa, profesional independiente, asociación, herramienta, guía o recurso que valga la pena investigar.\" data-en=\"It can be a company, independent professional, association, tool, guide or resource worth investigating.\">Puede ser una empresa, profesional independiente, asociación, herramienta, guía o recurso que valga la pena investigar.</p></div><button type=\"button\" class=\"close-form\" data-close=\"provider-form\">×</button></div>\n          <form class=\"capture-form\" data-type-es=\"Proveedor o recurso recomendado\" data-type-en=\"Recommended provider or resource\">\n            <div class=\"form-grid\">\n              <div class=\"field\"><label class=\"t\" data-cms=\"text-85\" data-es=\"¿Cuál es tu relación con este recurso?\" data-en=\"What is your relationship to this resource?\">¿Cuál es tu relación con este recurso?</label><select name=\"Relationship\"><option value=\"I run it\" class=\"t\" data-cms=\"text-86\" data-es=\"Es mío / trabajo ahí\" data-en=\"I run it / work there\">Es mío / trabajo ahí</option><option value=\"Used it\" class=\"t\" data-cms=\"text-87\" data-es=\"Lo he usado\" data-en=\"I have used it\">Lo he usado</option><option value=\"Know it\" class=\"t\" data-cms=\"text-88\" data-es=\"Lo conozco\" data-en=\"I know it\">Lo conozco</option><option value=\"Other\" class=\"t\" data-cms=\"text-89\" data-es=\"Otro\" data-en=\"Other\">Otro</option></select></div>\n              <div class=\"field\"><label class=\"t\" data-cms=\"text-90\" data-es=\"Nombre del servicio, negocio o recurso *\" data-en=\"Name of service, business or resource *\">Nombre del servicio, negocio o recurso *</label><input required name=\"Resource name\" type=\"text\"></div>\n              <div class=\"field full\"><label class=\"t\" data-cms=\"text-91\" data-es=\"¿Qué hace? *\" data-en=\"What does it do? *\">¿Qué hace? *</label><textarea required name=\"What it does\"></textarea></div>\n              <div class=\"field\"><label class=\"t\" data-cms=\"text-92\" data-es=\"Ciudad / zona que cubre\" data-en=\"City / area covered\">Ciudad / zona que cubre</label><input name=\"Coverage\" type=\"text\"></div>\n              <div class=\"field\"><label class=\"t\" data-cms=\"text-93\" data-es=\"Web, Instagram o enlace\" data-en=\"Website, Instagram or link\">Web, Instagram o enlace</label><input name=\"Link\" type=\"text\"></div>\n              <div class=\"field full\"><label class=\"t\" data-cms=\"text-94\" data-es=\"¿Por qué crees que deberíamos conocerlo?\" data-en=\"Why do you think we should know it?\">¿Por qué crees que deberíamos conocerlo?</label><textarea name=\"Why relevant\"></textarea></div>\n              <div class=\"field\"><label class=\"t\" data-cms=\"text-95\" data-es=\"Tu nombre (opcional)\" data-en=\"Your name (optional)\">Tu nombre (opcional)</label><input name=\"Referrer name\" type=\"text\"></div>\n              <div class=\"field\"><label class=\"t\" data-cms=\"text-96\" data-es=\"Tu email (opcional)\" data-en=\"Your email (optional)\">Tu email (opcional)</label><input name=\"Referrer email\" type=\"email\"></div>\n            </div>\n            <div class=\"form-submit\"><button class=\"btn btn-light t\" type=\"submit\" data-cms=\"text-97\" data-es=\"COMPARTIR RECURSO →\" data-en=\"SHARE RESOURCE →\">COMPARTIR RECURSO →</button><span class=\"submit-status\" aria-live=\"polite\"></span></div>\n          </form>\n        </div>\n      </article>\n    </div>\n  </div>\n</section>\n\n<section class=\"what\" id=\"que-es\">\n  <div class=\"wrap what-grid\">\n    <div><div class=\"section-kicker t\" data-cms=\"text-98\" data-es=\"¿QUÉ ES ESTO?\" data-en=\"WHAT IS THIS?\">¿QUÉ ES ESTO?</div><h2>Coinspira.</h2></div>\n    <p class=\"t\" data-cms=\"text-99\" data-es=\"Coinspira está construyendo recursos y servicios para viajes que necesitan más preguntas antes de reservar.\" data-en=\"Coinspira is building resources and services for trips that need more questions before you book.\">Coinspira está construyendo recursos y servicios para viajes que necesitan más preguntas antes de reservar.</p>\n  </div>\n</section>\n\n<section class=\"products\" id=\"productos\">\n  <div class=\"wrap\">\n    <div class=\"section-kicker t\" data-cms=\"text-100\" data-es=\"DESPUÉS VIENE ESTO\" data-en=\"WHAT COMES NEXT\">DESPUÉS VIENE ESTO</div>\n    <h2 class=\"section-title t\" data-cms=\"text-101\" data-es=\"Lo que estamos construyendo.\" data-en=\"What we are building.\">Lo que estamos construyendo.</h2>\n    <p class=\"section-intro t\" data-cms=\"text-102\" data-es=\"Una vista simple por ahora. La investigación y los primeros viajes nos ayudarán a afinar qué necesita cada nivel.\" data-en=\"A simple view for now. Research and the first trips will help us refine what each level needs.\">Una vista simple por ahora. La investigación y los primeros viajes nos ayudarán a afinar qué necesita cada nivel.</p>\n    <div class=\"product-grid\">\n      <article class=\"product\"><div><div class=\"tag t\" data-cms=\"text-103\" data-es=\"ENTENDER · GRATIS\" data-en=\"UNDERSTAND · FREE\">ENTENDER · GRATIS</div><h3 class=\"t\" data-cms=\"text-104\" data-es=\"Historias y Recursos\" data-en=\"Stories & Resources\">Historias y Recursos</h3><p class=\"t\" data-cms=\"text-105\" data-es=\"Historias, guías, recursos y puntos de partida para investigar con más contexto.\" data-en=\"Stories, guides, resources and starting points for researching with more context.\">Historias, guías, recursos y puntos de partida para investigar con más contexto.</p></div><a class=\"t\" href=\"#aportar\" data-cms=\"text-106\" data-es=\"AYUDA A CONSTRUIRLOS →\" data-en=\"HELP US BUILD THEM →\">AYUDA A CONSTRUIRLOS →</a></article>\n      <article class=\"product\"><div><div class=\"tag t\" data-cms=\"text-107\" data-es=\"PREPARAR\" data-en=\"PREPARE\">PREPARAR</div><h3>Periplo</h3><p class=\"t\" data-cms=\"text-108\" data-es=\"Planeamos tu estrategia de viaje antes de reservar: qué sabemos, qué falta y cómo avanzar.\" data-en=\"We plan your travel strategy before booking: what we know, what is missing and how to move forward.\">Planeamos tu estrategia de viaje antes de reservar: qué sabemos, qué falta y cómo avanzar.</p></div><a class=\"t\" href=\"#cliente\" data-cms=\"text-109\" data-es=\"CUÉNTANOS TU VIAJE →\" data-en=\"TELL US ABOUT YOUR TRIP →\">CUÉNTANOS TU VIAJE →</a></article>\n      <article class=\"product\"><div><div class=\"tag t\" data-cms=\"text-110\" data-es=\"COORDINAR\" data-en=\"COORDINATE\">COORDINAR</div><h3>Periplo + Coinspirador</h3><p class=\"t\" data-cms=\"text-111\" data-es=\"Concierge, reservas y coordinación para viajes que necesitan más manos.\" data-en=\"Concierge, bookings and coordination for trips that need more hands.\">Concierge, reservas y coordinación para viajes que necesitan más manos.</p></div><a class=\"t\" href=\"#cliente\" data-cms=\"text-112\" data-es=\"CUÉNTANOS TU VIAJE →\" data-en=\"TELL US ABOUT YOUR TRIP →\">CUÉNTANOS TU VIAJE →</a></article>\n    </div>\n  </div>\n</section>\n</main>\n\n<footer>\n  <div class=\"wrap foot\"><span>© 2026 Coinspira</span><span>hola@conspireinspire.com</span></div>\n</footer>\n\n",
+  "texts": {
+    "text-1": {
+      "es": "Aportar",
+      "en": "Contribute"
+    },
+    "text-2": {
+      "es": "Qué es",
+      "en": "What it is"
+    },
+    "text-3": {
+      "es": "Planear un viaje",
+      "en": "Plan a trip"
+    },
+    "text-4": {
+      "es": "EXPEDIENTE ABIERTO",
+      "en": "OPEN CASE"
+    },
+    "text-5": {
+      "es": "Hay viajes que necesitan más preguntas antes de reservar.",
+      "en": "Some trips need more questions before you book."
+    },
+    "text-6": {
+      "es": "Edad. Movilidad. Salud. Familia. Distancias. Logística poco común.",
+      "en": "Age. Mobility. Health. Family. Distance. Unusual logistics."
+    },
+    "text-7": {
+      "es": "Estamos reuniendo las historias, trucos, proveedores y recursos que han hecho posibles los viajes difíciles de planear.",
+      "en": "We are gathering the stories, workarounds, providers and resources that have made difficult-to-plan trips possible."
+    },
+    "text-8": {
+      "es": "NECESITO AYUDA CON UN VIAJE →",
+      "en": "I NEED HELP WITH A TRIP →"
+    },
+    "text-9": {
+      "es": "QUIERO APORTAR →",
+      "en": "I WANT TO CONTRIBUTE →"
+    },
+    "text-10": {
+      "es": "Sitio en construcción · Actualmente aceptamos un número limitado de primeros viajes.",
+      "en": "Site in progress · We are currently accepting a limited number of early trips."
+    },
+    "text-11": {
+      "es": "EMPIEZA POR AQUÍ",
+      "en": "START HERE"
+    },
+    "text-12": {
+      "es": "¿Qué necesitas hoy?",
+      "en": "What do you need today?"
+    },
+    "text-13": {
+      "es": "Si estás planeando un viaje, no tienes que pasar por la investigación primero. Cuéntanos el caso directamente. Si vienes a compartir experiencia o conocimiento, también hay una entrada clara para ti.",
+      "en": "If you are planning a trip, you do not need to go through the research first. Tell us about the case directly. If you are here to share experience or knowledge, there is a clear route for you too."
+    },
+    "text-14": {
+      "es": "01 · VIAJERO / FAMILIA",
+      "en": "01 · TRAVELER / FAMILY"
+    },
+    "text-15": {
+      "es": "Quiero planear un viaje.",
+      "en": "I want to plan a trip."
+    },
+    "text-16": {
+      "es": "Cuéntanos qué estás tramando y qué hace que el viaje necesite más preparación. Revisaremos si Coinspira puede ayudarte y te contactaremos.",
+      "en": "Tell us what you are plotting and what makes the trip require more preparation. We will review whether Coinspira can help and get in touch."
+    },
+    "text-17": {
+      "es": "CUÉNTANOS QUÉ ESTÁS TRAMANDO →",
+      "en": "TELL US WHAT YOU'RE PLOTTING →"
+    },
+    "text-18": {
+      "es": "02 · COMUNIDAD",
+      "en": "02 · COMMUNITY"
+    },
+    "text-19": {
+      "es": "Quiero ayudar a construir esto.",
+      "en": "I want to help build this."
+    },
+    "text-20": {
+      "es": "Comparte un viaje que ya hiciste, participa en una conversación de investigación o recomiéndanos a alguien que facilita este tipo de viajes.",
+      "en": "Share a trip you have taken, join a research conversation or recommend someone who makes this kind of travel easier."
+    },
+    "text-21": {
+      "es": "VER LAS 3 FORMAS DE APORTAR →",
+      "en": "SEE 3 WAYS TO CONTRIBUTE →"
+    },
+    "text-22": {
+      "es": "Cuéntanos qué estás tramando.",
+      "en": "Tell us what you're plotting."
+    },
+    "text-23": {
+      "es": "No necesitamos tu expediente completo. Solo lo suficiente para entender el viaje y saber cómo continuar.",
+      "en": "We do not need your full file. Just enough to understand the trip and know how to continue."
+    },
+    "text-24": {
+      "es": "Nombre *",
+      "en": "Name *"
+    },
+    "text-25": {
+      "es": "Email *",
+      "en": "Email *"
+    },
+    "text-26": {
+      "es": "WhatsApp / teléfono",
+      "en": "WhatsApp / phone"
+    },
+    "text-27": {
+      "es": "¿Para quién estás planeando?",
+      "en": "Who are you planning for?"
+    },
+    "text-28": {
+      "es": "Para mí",
+      "en": "Myself"
+    },
+    "text-29": {
+      "es": "Un familiar",
+      "en": "A family member"
+    },
+    "text-30": {
+      "es": "Pareja o amigo",
+      "en": "Partner or friend"
+    },
+    "text-31": {
+      "es": "Un grupo",
+      "en": "A group"
+    },
+    "text-32": {
+      "es": "Otro",
+      "en": "Other"
+    },
+    "text-33": {
+      "es": "Destino o idea de viaje",
+      "en": "Destination or trip idea"
+    },
+    "text-34": {
+      "es": "Fechas o periodo aproximado",
+      "en": "Dates or approximate timing"
+    },
+    "text-35": {
+      "es": "¿Qué necesita más planeación?",
+      "en": "What needs more planning?"
+    },
+    "text-36": {
+      "es": "Movilidad",
+      "en": "Mobility"
+    },
+    "text-37": {
+      "es": "Salud / medicación",
+      "en": "Health / medication"
+    },
+    "text-38": {
+      "es": "Edad / energía",
+      "en": "Age / stamina"
+    },
+    "text-39": {
+      "es": "Familia / acompañantes",
+      "en": "Family / companions"
+    },
+    "text-40": {
+      "es": "Distancias / transporte",
+      "en": "Distances / transport"
+    },
+    "text-41": {
+      "es": "Proveedor especializado",
+      "en": "Specialized provider"
+    },
+    "text-42": {
+      "es": "Otro",
+      "en": "Other"
+    },
+    "text-43": {
+      "es": "En pocas palabras, ¿qué hace este viaje menos simple? *",
+      "en": "In a few words, what makes this trip less simple? *"
+    },
+    "text-44": {
+      "es": "Para este primer contacto, evita compartir expedientes médicos, diagnósticos detallados u otra información sensible.",
+      "en": "For this first contact, please avoid sharing medical records, detailed diagnoses or other sensitive information."
+    },
+    "text-45": {
+      "es": "Acepto que Coinspira me contacte para dar seguimiento a este viaje.",
+      "en": "I agree that Coinspira may contact me to follow up on this trip."
+    },
+    "text-46": {
+      "es": "ENVIAR MI CASO →",
+      "en": "SEND MY CASE →"
+    },
+    "text-47": {
+      "es": "AYÚDANOS A INVESTIGAR",
+      "en": "HELP US RESEARCH"
+    },
+    "text-48": {
+      "es": "Tres maneras de coinspirar.",
+      "en": "Three ways to coinspire."
+    },
+    "text-49": {
+      "es": "Cada tipo de persona tiene su propio formulario. Abre solo el que te corresponda.",
+      "en": "Each type of participant has a different form. Open only the one that fits you."
+    },
+    "text-50": {
+      "es": "01 · EXPERIENCIA",
+      "en": "01 · EXPERIENCE"
+    },
+    "text-51": {
+      "es": "Hice un viaje así.",
+      "en": "I took a trip like this."
+    },
+    "text-52": {
+      "es": "Cuéntanos qué lo hizo difícil, qué terminó funcionando y qué aprendiste. Puedes compartirlo de forma anónima.",
+      "en": "Tell us what made it difficult, what ended up working and what you learned. You can share anonymously."
+    },
+    "text-53": {
+      "es": "Tu experiencia.",
+      "en": "Your experience."
+    },
+    "text-54": {
+      "es": "Lo importante es lo que aprendiste, no tu identidad.",
+      "en": "What matters is what you learned, not your identity."
+    },
+    "text-55": {
+      "es": "Nombre (opcional)",
+      "en": "Name (optional)"
+    },
+    "text-56": {
+      "es": "Email (opcional)",
+      "en": "Email (optional)"
+    },
+    "text-57": {
+      "es": "¿Qué viaje fue? *",
+      "en": "What trip was it? *"
+    },
+    "text-58": {
+      "es": "¿Qué lo hizo difícil de planear? *",
+      "en": "What made it difficult to plan? *"
+    },
+    "text-59": {
+      "es": "¿Qué terminó funcionando? *",
+      "en": "What ended up working? *"
+    },
+    "text-60": {
+      "es": "¿Qué aprendiste que le serviría a alguien más?",
+      "en": "What did you learn that could help someone else?"
+    },
+    "text-61": {
+      "es": "Pueden contactarme si tienen una pregunta sobre esta historia.",
+      "en": "You may contact me if you have a question about this story."
+    },
+    "text-62": {
+      "es": "ENVIAR HISTORIA →",
+      "en": "SEND STORY →"
+    },
+    "text-63": {
+      "es": "02 · INVESTIGACIÓN",
+      "en": "02 · RESEARCH"
+    },
+    "text-64": {
+      "es": "Quiero participar.",
+      "en": "I want to participate."
+    },
+    "text-65": {
+      "es": "Estamos conversando con viajeros y familias para entender cómo preparan viajes que requieren más planeación. La llamada dura 15 minutos.",
+      "en": "We are speaking with travelers and families to understand how they prepare trips that require more planning. The call takes 15 minutes."
+    },
+    "text-66": {
+      "es": "Participa en la investigación.",
+      "en": "Join the research."
+    },
+    "text-67": {
+      "es": "Déjanos lo mínimo para entender tu caso y poder coordinar una conversación breve.",
+      "en": "Leave us the minimum information needed to understand your case and coordinate a short conversation."
+    },
+    "text-68": {
+      "es": "Nombre *",
+      "en": "Name *"
+    },
+    "text-69": {
+      "es": "Email *",
+      "en": "Email *"
+    },
+    "text-70": {
+      "es": "WhatsApp / teléfono",
+      "en": "WhatsApp / phone"
+    },
+    "text-71": {
+      "es": "Ciudad / zona horaria",
+      "en": "City / time zone"
+    },
+    "text-72": {
+      "es": "¿Desde qué lugar participas?",
+      "en": "What is your role in this trip?"
+    },
+    "text-73": {
+      "es": "Soy viajero/a",
+      "en": "I am the traveler"
+    },
+    "text-74": {
+      "es": "Soy familiar",
+      "en": "I am a family member"
+    },
+    "text-75": {
+      "es": "Ayudé a planear",
+      "en": "I helped plan it"
+    },
+    "text-76": {
+      "es": "Otro",
+      "en": "Other"
+    },
+    "text-77": {
+      "es": "En pocas palabras, ¿qué hace o hizo este viaje menos simple? *",
+      "en": "In a few words, what makes or made this trip less simple? *"
+    },
+    "text-78": {
+      "es": "Acepto que Coinspira me contacte para coordinar una conversación de investigación de aproximadamente 15 minutos.",
+      "en": "I agree that Coinspira may contact me to coordinate a research conversation of approximately 15 minutes."
+    },
+    "text-79": {
+      "es": "QUIERO PARTICIPAR →",
+      "en": "I WANT TO PARTICIPATE →"
+    },
+    "text-80": {
+      "es": "03 · RECURSO",
+      "en": "03 · RESOURCE"
+    },
+    "text-81": {
+      "es": "Conozco a alguien que ayuda.",
+      "en": "I know someone who helps."
+    },
+    "text-82": {
+      "es": "¿Conoces o tienes un servicio, negocio o recurso que facilita este tipo de viajes? Queremos conocerlo.",
+      "en": "Do you know or run a service, business or resource that makes this kind of travel easier? We want to know it."
+    },
+    "text-83": {
+      "es": "Comparte un recurso.",
+      "en": "Share a resource."
+    },
+    "text-84": {
+      "es": "Puede ser una empresa, profesional independiente, asociación, herramienta, guía o recurso que valga la pena investigar.",
+      "en": "It can be a company, independent professional, association, tool, guide or resource worth investigating."
+    },
+    "text-85": {
+      "es": "¿Cuál es tu relación con este recurso?",
+      "en": "What is your relationship to this resource?"
+    },
+    "text-86": {
+      "es": "Es mío / trabajo ahí",
+      "en": "I run it / work there"
+    },
+    "text-87": {
+      "es": "Lo he usado",
+      "en": "I have used it"
+    },
+    "text-88": {
+      "es": "Lo conozco",
+      "en": "I know it"
+    },
+    "text-89": {
+      "es": "Otro",
+      "en": "Other"
+    },
+    "text-90": {
+      "es": "Nombre del servicio, negocio o recurso *",
+      "en": "Name of service, business or resource *"
+    },
+    "text-91": {
+      "es": "¿Qué hace? *",
+      "en": "What does it do? *"
+    },
+    "text-92": {
+      "es": "Ciudad / zona que cubre",
+      "en": "City / area covered"
+    },
+    "text-93": {
+      "es": "Web, Instagram o enlace",
+      "en": "Website, Instagram or link"
+    },
+    "text-94": {
+      "es": "¿Por qué crees que deberíamos conocerlo?",
+      "en": "Why do you think we should know it?"
+    },
+    "text-95": {
+      "es": "Tu nombre (opcional)",
+      "en": "Your name (optional)"
+    },
+    "text-96": {
+      "es": "Tu email (opcional)",
+      "en": "Your email (optional)"
+    },
+    "text-97": {
+      "es": "COMPARTIR RECURSO →",
+      "en": "SHARE RESOURCE →"
+    },
+    "text-98": {
+      "es": "¿QUÉ ES ESTO?",
+      "en": "WHAT IS THIS?"
+    },
+    "text-99": {
+      "es": "Coinspira está construyendo recursos y servicios para viajes que necesitan más preguntas antes de reservar.",
+      "en": "Coinspira is building resources and services for trips that need more questions before you book."
+    },
+    "text-100": {
+      "es": "DESPUÉS VIENE ESTO",
+      "en": "WHAT COMES NEXT"
+    },
+    "text-101": {
+      "es": "Lo que estamos construyendo.",
+      "en": "What we are building."
+    },
+    "text-102": {
+      "es": "Una vista simple por ahora. La investigación y los primeros viajes nos ayudarán a afinar qué necesita cada nivel.",
+      "en": "A simple view for now. Research and the first trips will help us refine what each level needs."
+    },
+    "text-103": {
+      "es": "ENTENDER · GRATIS",
+      "en": "UNDERSTAND · FREE"
+    },
+    "text-104": {
+      "es": "Historias y Recursos",
+      "en": "Stories & Resources"
+    },
+    "text-105": {
+      "es": "Historias, guías, recursos y puntos de partida para investigar con más contexto.",
+      "en": "Stories, guides, resources and starting points for researching with more context."
+    },
+    "text-106": {
+      "es": "AYUDA A CONSTRUIRLOS →",
+      "en": "HELP US BUILD THEM →"
+    },
+    "text-107": {
+      "es": "PREPARAR",
+      "en": "PREPARE"
+    },
+    "text-108": {
+      "es": "Planeamos tu estrategia de viaje antes de reservar: qué sabemos, qué falta y cómo avanzar.",
+      "en": "We plan your travel strategy before booking: what we know, what is missing and how to move forward."
+    },
+    "text-109": {
+      "es": "CUÉNTANOS TU VIAJE →",
+      "en": "TELL US ABOUT YOUR TRIP →"
+    },
+    "text-110": {
+      "es": "COORDINAR",
+      "en": "COORDINATE"
+    },
+    "text-111": {
+      "es": "Concierge, reservas y coordinación para viajes que necesitan más manos.",
+      "en": "Concierge, bookings and coordination for trips that need more hands."
+    },
+    "text-112": {
+      "es": "CUÉNTANOS TU VIAJE →",
+      "en": "TELL US ABOUT YOUR TRIP →"
+    }
+  }
+}
