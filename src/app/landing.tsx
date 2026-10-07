@@ -2,10 +2,13 @@
 import parse from 'html-react-parser';
 import { useEffect, useRef } from 'react';
 import source from '@/content/landing.json';
+import { mountHeroReveal } from './hero-reveal';
 export default function Landing({ overrides }: { overrides: Record<string, { es: string; en: string }> }) {
   const root = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const container = root.current!;
+    const hero = container.querySelector<HTMLElement>('.hero');
+    const disposeHeroReveal = hero ? mountHeroReveal(hero) : undefined;
     let lang = 'es';
     const controller = new AbortController();
     function translate() {
@@ -35,6 +38,7 @@ export default function Landing({ overrides }: { overrides: Record<string, { es:
         el.classList.toggle('open', active);
         container.querySelectorAll(`[data-toggle="${el.id}"]`).forEach(btn => btn.setAttribute('aria-expanded', String(active)));
       });
+      if (open) { panel.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth', block: 'start' }); panel.querySelector<HTMLInputElement>('input')?.focus({ preventScroll: true }); }
     }, { signal: controller.signal });
     container.addEventListener('submit', async event => {
       const form = event.target as HTMLFormElement;
@@ -57,8 +61,18 @@ export default function Landing({ overrides }: { overrides: Record<string, { es:
         status.textContent = lang === 'es' ? 'No se pudo enviar. Intenta de nuevo.' : 'Could not send. Please try again.';
       } finally { button.disabled = false; }
     }, { signal: controller.signal });
+    container.querySelectorAll('[data-toggle]').forEach(button => button.setAttribute('aria-expanded', 'false'));
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+    }, { threshold: 0.08 });
+    container.querySelectorAll('.section-title, .choice-card, .actor, .what-grid, .product, .footer-cta').forEach((el, i) => {
+      el.classList.add('reveal');
+      (el as HTMLElement).style.transitionDelay = `${(i % 3) * 70}ms`;
+      observer.observe(el);
+    });
+    container.classList.add('motion-ready');
     translate();
-    return () => controller.abort();
+    return () => { controller.abort(); observer.disconnect(); disposeHeroReveal?.(); };
   }, [overrides]);
   return <div ref={root}>{parse(source.body)}</div>;
 }
