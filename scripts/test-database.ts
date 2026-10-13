@@ -5,6 +5,7 @@ import { neonConfig } from '@neondatabase/serverless';
 import bcrypt from 'bcryptjs';
 import { db, migrate } from '../src/lib/db';
 import { schema } from '../src/lib/schema';
+import { publishedEntries, publishedEntry } from '../src/lib/library';
 import { allowed } from '../src/lib/rate-limit';
 import { POST as submit } from '../src/app/api/submissions/route';
 
@@ -88,6 +89,11 @@ async function main() {
     const entrySql = adminSource.match(/sql: '(INSERT INTO entries[^'\n]+)'/)![1];
     await db.execute({ sql: entrySql, args: ['entry', 'historia', 'test-entry', 'Historia', 'Story', 'Texto', 'Text', 1] });
     assert.equal((await db.execute({ sql: 'SELECT * FROM entries WHERE slug=$1 AND published=1', args: ['test-entry'] })).rows.length, 1);
+    await db.execute({ sql: entrySql, args: ['draft', 'historia', 'draft-entry', 'Borrador', 'Draft', 'Privado', 'Private', 0] });
+    assert.equal((await publishedEntries()).length, 1);
+    assert.equal((await publishedEntry('test-entry'))?.title, 'Historia');
+    assert.equal(await publishedEntry('draft-entry'), null);
+    assert.equal(await publishedEntry('missing-entry'), null);
     assert.equal((await db.execute({ sql: 'SELECT * FROM entries WHERE slug=$1', args: ["' OR 1=1 --"] })).rows.length, 0);
 
     const limiterRequest = new Request('https://coinspira.test', { headers: { 'x-forwarded-for': '192.0.2.1' } });

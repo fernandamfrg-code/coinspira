@@ -62,6 +62,16 @@ function WishLetters({ hero, locale }: { hero: HTMLElement; locale: 'es' | 'en' 
   useEffect(() => {
     const element = field.current;
     if (!element) return;
+    const stage = hero.querySelector<HTMLElement>('.mobile-flight-space');
+    const resize = new ResizeObserver(() => {
+      if (!stage) return;
+      const heroRect = hero.getBoundingClientRect();
+      const rect = stage.getBoundingClientRect();
+      element.style.setProperty('--mobile-wish-top', `${rect.top - heroRect.top}px`);
+      element.style.setProperty('--mobile-wish-height', `${rect.height}px`);
+    });
+    if (stage) resize.observe(stage);
+    resize.observe(hero);
     let frame = 0;
     let timer = 0;
     let last = { x: 0, y: 0 };
@@ -85,7 +95,7 @@ function WishLetters({ hero, locale }: { hero: HTMLElement; locale: 'es' | 'en' 
     hero.addEventListener('pointermove', move, { passive: true });
     hero.addEventListener('pointerdown', move, { passive: true });
     hero.addEventListener('pointerleave', clear);
-    return () => { cancelAnimationFrame(frame); window.clearTimeout(timer); hero.removeEventListener('pointermove', move); hero.removeEventListener('pointerdown', move); hero.removeEventListener('pointerleave', clear); };
+    return () => { resize.disconnect(); cancelAnimationFrame(frame); window.clearTimeout(timer); hero.removeEventListener('pointermove', move); hero.removeEventListener('pointerdown', move); hero.removeEventListener('pointerleave', clear); };
   }, [hero]);
   return <div className="wish-whispers" ref={field} aria-hidden="true">
     {selected.map((index, i) => <p className="wish-whisper" key={i} style={{ '--wish-x': `${[12, 50, 5, 49, 14, 53][positions[i]]}%`, '--wish-y': `${[6, 20, 39, 54, 73, 88][positions[i]]}%` } as CSSProperties}>{wishes[index][locale === 'es' ? 0 : 1]}</p>)}
@@ -129,13 +139,18 @@ function RouteAtlas({ section }: { section: HTMLElement; locale: 'es' | 'en' }) 
     playback();
     return () => { observer.disconnect(); cancelAnimationFrame(frame); window.clearTimeout(timer); section.removeEventListener('pointermove', move); section.removeEventListener('pointerdown', move); section.removeEventListener('pointerleave', leave); preference.removeEventListener('change', playback); };
   }, [section]);
-  const routes = <svg viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-    <g className="atlas-paths">{flightPaths.map(path => <path key={path} d={path} vectorEffect="non-scaling-stroke" />)}</g>
-    {flightPaths.map((path, i) => <g className="atlas-flying" key={path}>
+  const drawRoutes = (paths: string[], mobile: boolean) => <svg className={mobile ? 'atlas-route-mobile' : 'atlas-route-wide'} viewBox={mobile ? '0 0 400 600' : '0 0 1200 600'} preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g className="atlas-paths">{paths.map(path => <path key={path} d={path} vectorEffect="non-scaling-stroke" />)}</g>
+    {paths.map((path, i) => <g className="atlas-flying" key={path}>
       <animateMotion path={path} dur={`${38 + i * 10}s`} begin={`${-i * 17}s`} rotate="auto" repeatCount="indefinite" />
-      <path d="M-7-5 9 0-7 5-3 0Z" fill="currentColor" />
+      <path d="M-11-7 13 0-11 7-5 0Z" fill="currentColor" />
     </g>)}
   </svg>;
+  const routes = <>{drawRoutes(flightPaths, false)}{drawRoutes([
+    'M-20 160C90 50 180 200 130 290S280 500 420 390',
+    'M-20 440C100 560 360 380 280 210S220 50 420 100',
+  ], true)}</>;
+
   return <div className="route-atlas" ref={root} aria-hidden="true"><div className="atlas-base">{routes}</div><div className="atlas-reveal">{routes}</div></div>;
 }
 

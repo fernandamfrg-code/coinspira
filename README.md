@@ -60,4 +60,4 @@ npm run db:admin
 
 No se importan automáticamente archivos SQLite ni usuarios locales de la versión anterior. Antes del cambio, la base local tenía un usuario y no tenía datos operativos; el usuario de producción se crea con las nuevas credenciales.
 
-El panel `/admin` gestiona solicitudes, textos, publicaciones, contactos, citas y registros manuales de pagos. La biblioteca pública está en `/explorar`. El registro de pagos no constituye una pasarela de cobro. `index.html` conserva el sitio original como referencia.
+El panel `/admin` gestiona solicitudes, textos, publicaciones, contactos, citas y registros manuales de pagos. La biblioteca pública está en `/historias` y muestra únicamente publicaciones activadas en el admin; `/explorar` conserva compatibilidad mediante redirección. El registro de pagos no constituye una pasarela de cobro. `index.html` conserva el sitio original como referencia.

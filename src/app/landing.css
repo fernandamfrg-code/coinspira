@@ -235,3 +235,46 @@ body{background:#faf9f6;color:var(--black);font-family:Onest,Inter,Arial,sans-se
 .atlas-hover .atlas-reveal{opacity:.55}.atlas-reveal .atlas-paths{stroke-width:.9}
 @media(max-width:700px){.wish-whispers{inset:31% 5% 47% 28%}.wish-whisper{font-size:calc(.74rem * var(--reading-scale));line-height:1.5;width:65%;max-width:170px}.wish-whisper:nth-child(n+4){display:none}.wish-whisper:nth-child(1){left:0;top:5%}.wish-whisper:nth-child(2){left:28%;top:40%}.wish-whisper:nth-child(3){left:6%;top:70%}.atlas-base{opacity:.12}.atlas-paths{stroke-width:.7;stroke-dasharray:2 12}.atlas-flying{opacity:.45}.atlas-hover .atlas-reveal{opacity:.35}}
 @media(prefers-reduced-motion:reduce){.wish-whisper{transition:none;translate:none}.atlas-reveal{transition:none}.atlas-flying{display:none}}
+/* Mobile is a flowing composition, with a dedicated space for the paper plane. */
+.mobile-flight-space{display:none}
+.atlas-base{opacity:.34}.atlas-paths{stroke-width:1;stroke-dasharray:3 9}.atlas-flying{opacity:1}.atlas-hover .atlas-reveal{opacity:.75}.atlas-reveal .atlas-paths{stroke-width:1.2}
+@media(max-width:700px){
+ html{scroll-snap-type:none}
+ .coinspira-landing{padding-bottom:80px;background:#1d2728}
+ .coinspira-landing main>section,.coinspira-landing footer{min-height:0;padding:52px 0;scroll-margin-top:16px}
+ .coinspira-landing .hero{padding:100px 0 35px;min-height:0;display:block}
+ .coinspira-landing .hero-grid{display:flex;flex-direction:column;gap:0;min-width:0}
+ .coinspira-landing .hero-grid>div:first-child{width:100%;max-width:none}
+ .coinspira-landing h1{font-size:calc(clamp(2.05rem,8.3vw,2.65rem) * var(--reading-scale));line-height:1.09;letter-spacing:-.05em;overflow-wrap:normal}
+ .mobile-flight-space{position:relative;display:block;height:220px;width:100%;margin:8px 0 12px}
+ .mobile-paper-plane{display:block;position:absolute;right:-10px;top:0;width:95%;height:100%;transform:rotate(-7deg);filter:drop-shadow(0 14px 12px #4b402315)}
+ .coinspira-landing .flight-art .plane-wrap{display:none}
+ .coinspira-landing .hero-side{margin:0;max-width:100%;width:100%;padding:0}
+ .coinspira-landing .descriptor{font-size:calc(.9rem * var(--reading-scale));line-height:1.7}
+ .coinspira-landing .hero-copy{line-height:1.75}
+ .coinspira-landing .hero-actions{display:grid;grid-template-columns:1fr;gap:10px;margin-top:24px}
+ .coinspira-landing .hero-actions .btn{width:100%;font-size:calc(.85rem * var(--reading-scale));padding:14px 16px;min-height:48px;text-align:center}
+ .coinspira-landing .micro{line-height:1.65;margin-top:17px}
+ .coinspira-landing .hero-bottom{margin-top:24px;align-items:center;flex-wrap:wrap;gap:15px;padding-bottom:20px}
+ .coinspira-landing .hero-watermark{position:relative;bottom:auto;font-size:20vw;line-height:1;margin:0;opacity:.45}
+ .wish-whispers{top:var(--mobile-wish-top,280px);height:var(--mobile-wish-height,220px);bottom:auto;left:15%;right:8%}
+ .coinspira-landing .choice-grid,.coinspira-landing .research-grid,.coinspira-landing .product-grid{gap:18px;margin-top:27px;grid-template-columns:minmax(0,1fr)}
+ .coinspira-landing .section-intro{font-size:calc(.95rem * var(--reading-scale));line-height:1.75}
+ .coinspira-landing .choice-card,.coinspira-landing .actor,.coinspira-landing .product{min-width:0}
+ .coinspira-landing .choice-card h2{font-size:calc(1.85rem * var(--reading-scale));line-height:1.15}
+ .coinspira-landing .actor-button{min-height:0;padding:26px}
+ .coinspira-landing .actor h3{font-size:calc(1.6rem * var(--reading-scale));line-height:1.15}
+ .coinspira-landing .choice-action{align-self:stretch;text-align:center;white-space:normal;line-height:1.5}
+ .coinspira-landing .form-head{gap:10px}.coinspira-landing .form-head h3{line-height:1.25}.coinspira-landing .form-panel{max-width:100%;padding:22px 18px}.coinspira-landing .field{min-width:0}.coinspira-landing .field input,.coinspira-landing .field select,.coinspira-landing .field textarea{font-size:max(16px,calc(1rem * var(--reading-scale)))}.coinspira-landing .pill{max-width:100%;white-space:normal}.coinspira-landing .form-submit .btn{width:100%}
+ .coinspira-landing .what{padding:64px 0;min-height:440px;border-block:1px solid #e4ddcd}.coinspira-landing .what-grid{gap:22px}.coinspira-landing .what h2{font-size:calc(2.3rem * var(--reading-scale))}.coinspira-landing .what p{font-size:calc(1.45rem * var(--reading-scale));line-height:1.5}
+ .atlas-base{opacity:.3}.atlas-paths{stroke-width:1;stroke-dasharray:3 10}.atlas-flying{opacity:1}.atlas-hover .atlas-reveal{opacity:.65}
+ .coinspira-landing .product{padding:26px;border-radius:22px}.coinspira-landing .product h3{line-height:1.2}.coinspira-landing .product a{font-size:calc(.85rem * var(--reading-scale));padding-block:16px;line-height:1.6}
+ .coinspira-landing footer{padding:50px 0 35px;overflow:hidden;position:relative;display:block;border-radius:24px 24px 0 0}
+ .coinspira-landing .footer-cta{gap:25px;padding-bottom:35px}.coinspira-landing .footer-cta h2{font-size:calc(2.15rem * var(--reading-scale));line-height:1.15;max-width:none}.coinspira-landing .footer-cta .btn{width:100%;min-height:48px}
+ .coinspira-landing .foot{display:flex;flex-direction:column;gap:12px;padding-top:22px;padding-bottom:18px;font-size:calc(.85rem * var(--reading-scale))}
+ .coinspira-landing .footer-watermark{position:relative;bottom:auto;text-align:center;font-size:20vw;line-height:1;color:#afc7c818;margin:10px 0 0}
+ .section-navigation,.reading-controls{bottom:calc(10px + env(safe-area-inset-bottom));box-shadow:0 3px 18px #1d272816}
+}
+@media(max-width:370px){.coinspira-landing .brand{font-size:1.35rem}.coinspira-landing .eyebrow{font-size:calc(.65rem * var(--reading-scale))}.mobile-flight-space{height:195px}.coinspira-landing .choice-card,.coinspira-landing .product{padding:22px}}
+.atlas-base>svg,.atlas-reveal>svg{position:absolute;inset:0}.atlas-base>.atlas-route-mobile,.atlas-reveal>.atlas-route-mobile{display:none}
+@media(max-width:700px){.atlas-base>.atlas-route-wide,.atlas-reveal>.atlas-route-wide{display:none}.atlas-base>.atlas-route-mobile,.atlas-reveal>.atlas-route-mobile{display:block}.atlas-base{opacity:.4}.atlas-flying{color:#a77837}}

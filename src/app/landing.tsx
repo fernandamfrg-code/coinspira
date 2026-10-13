@@ -22,6 +22,7 @@ export default function Landing({ overrides }: { overrides: Record<string, { es:
         const value = key && overrides[key] ? overrides[key][lang as 'es' | 'en'] : el.dataset[lang];
         if (value !== undefined) el.textContent = value;
       });
+      container.querySelectorAll<HTMLAnchorElement>('a[data-cms="text-106"]').forEach(link => { link.href = lang === 'en' ? '/historias?lang=en' : '/historias'; });
       container.querySelectorAll<HTMLElement>('.lang button').forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
     }
     container.querySelectorAll<HTMLInputElement>('input,select,textarea').forEach((el, i) => {
