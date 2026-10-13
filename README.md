@@ -1,44 +1,31 @@
-# Coinspira — MVP website
+# CoInspira
 
-> Esta carpeta ahora contiene la conversión a Next.js. Para desarrollo, admin, CMS y configuración consulta [IMPLEMENTATION.md](IMPLEMENTATION.md). Las instrucciones de abajo corresponden al HTML original.
+Sitio de viajes accesibles construido con Next.js, con contenido bilingüe, formularios y panel de administración.
 
-This folder is ready to publish as a static website with GitHub + Vercel.
+## Desarrollo
 
-## Files
+```sh
+npm install
+npm run dev
+```
 
-- `index.html` — the website
-- `assets/coinspira-logo.png` — approved white/orange logo for the black header
-- `assets/favicon-512.png` — browser favicon
-- `assets/apple-touch-icon.png` — icon for Apple devices
-- `vercel.json` — minimal Vercel configuration
-- `.gitignore` — ignores local/system deployment files
+Configura las variables de `.env.example` en `.env.local`. La base de datos local usa SQLite; en producción configura una base Turso mediante `TURSO_DATABASE_URL` y `TURSO_AUTH_TOKEN`.
 
-## Publish with GitHub + Vercel
+Define `AUTH_SECRET` con al menos 32 caracteres. Para crear o actualizar un administrador, configura `ADMIN_EMAIL` y `ADMIN_PASSWORD` y ejecuta:
 
-1. Create a new GitHub repository, for example `coinspira-site`.
-2. Upload **the contents of this folder** to the root of that repository.
-3. Commit the files.
-4. In Vercel, choose **Add New → Project** and import the GitHub repository.
-5. Framework preset: **Other**.
-6. Root Directory: leave as `./`.
-7. Build Command: leave empty.
-8. Output Directory: leave empty.
-9. Click **Deploy**.
+```sh
+node --env-file=.env.local --import tsx scripts/create-admin.ts
+```
 
-Vercel will serve `index.html` automatically.
+## Verificación
 
-## Updating the site later
+```sh
+npm run typecheck
+npm run build
+```
 
-Edit or replace `index.html`, commit the change to GitHub, and Vercel will redeploy automatically.
+## Publicación
 
-## Custom domain
+Importa el repositorio en Vercel, selecciona el framework Next.js y configura las variables de entorno. La aplicación está en `src/app`; `index.html` conserva el sitio original como referencia.
 
-After deployment, add your domain under:
-
-**Vercel → Project → Settings → Domains**
-
-Then follow Vercel's DNS instructions for your registrar.
-
-## Note
-
-The page uses Google Fonts from the web. No npm install, build system, database, or server is required.
+El panel `/admin` permite gestionar solicitudes, contenido bilingüe, publicaciones, contactos, citas y registros manuales de pagos. La biblioteca pública está en `/explorar`.

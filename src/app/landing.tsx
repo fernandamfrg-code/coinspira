@@ -1,9 +1,12 @@
 'use client';
 import parse from 'html-react-parser';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import source from '@/content/landing.json';
+import LandingControls from './landing-controls';
+import TravelMoments from './travel-moments';
 import { mountHeroReveal } from './hero-reveal';
 export default function Landing({ overrides }: { overrides: Record<string, { es: string; en: string }> }) {
+  const [locale, setLocale] = useState<'es' | 'en'>('es');
   const root = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const container = root.current!;
@@ -13,6 +16,7 @@ export default function Landing({ overrides }: { overrides: Record<string, { es:
     const controller = new AbortController();
     function translate() {
       document.documentElement.lang = lang;
+      setLocale(lang as 'es' | 'en');
       container.querySelectorAll<HTMLElement>('.t').forEach(el => {
         const key = el.dataset.cms;
         const value = key && overrides[key] ? overrides[key][lang as 'es' | 'en'] : el.dataset[lang];
@@ -74,5 +78,5 @@ export default function Landing({ overrides }: { overrides: Record<string, { es:
     translate();
     return () => { controller.abort(); observer.disconnect(); disposeHeroReveal?.(); };
   }, [overrides]);
-  return <div ref={root}>{parse(source.body)}</div>;
+  return <div ref={root} className="coinspira-landing"><LandingControls locale={locale} /><TravelMoments locale={locale} />{parse(source.body)}</div>;
 }
