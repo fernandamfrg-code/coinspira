@@ -20,7 +20,7 @@ export async function POST(request: Request) {
     if (required[type].some(key => !payload[key]?.[0]?.trim())) return Response.json({ error: 'Faltan campos obligatorios.' }, { status: 400 });
     for (const key of ['Email', 'Email (optional)', 'Referrer email']) if (payload[key]?.[0] && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(payload[key][0])) return Response.json({}, { status: 400 });
     await migrate();
-    await db.execute({ sql: 'INSERT INTO submissions (id,type,locale,payload) VALUES (?,?,?,?)', args: [randomUUID(), type, locale, JSON.stringify(payload)] });
+    await db.execute({ sql: 'INSERT INTO submissions (id,type,locale,payload) VALUES ($1,$2,$3,$4)', args: [randomUUID(), type, locale, JSON.stringify(payload)] });
     return Response.json({ ok: true });
   } catch { return Response.json({ error: 'No se pudo guardar.' }, { status: 500 }); }
 }

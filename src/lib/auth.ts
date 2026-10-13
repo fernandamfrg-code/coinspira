@@ -12,7 +12,7 @@ export async function session() {
     if (!token) return null;
     const { payload } = await jwtVerify(token, secret(), { algorithms: ['HS256'] });
     await migrate();
-    const user = await db.execute({ sql: 'SELECT id FROM users WHERE id = ?', args: [String(payload.sub)] });
+    const user = await db.execute({ sql: 'SELECT id FROM users WHERE id = $1', args: [String(payload.sub)] });
     return user.rows[0] || null;
   } catch { return null; }
 }

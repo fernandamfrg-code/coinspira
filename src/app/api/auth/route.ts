@@ -10,7 +10,7 @@ export async function POST(request: Request) {
     const { email, password } = await request.json();
     if (typeof email !== 'string' || typeof password !== 'string' || password.length > 256) return Response.json({}, { status: 400 });
     await migrate();
-    const result = await db.execute({ sql: 'SELECT * FROM users WHERE email=?', args: [email.toLowerCase()] });
+    const result = await db.execute({ sql: 'SELECT * FROM users WHERE email=$1', args: [email.toLowerCase()] });
     const user = result.rows[0];
     if (!user || !await bcrypt.compare(password, String(user.password_hash))) return Response.json({ error: 'Credenciales incorrectas.' }, { status: 401 });
     await login(String(user.id));
