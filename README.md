@@ -15,6 +15,9 @@ Sitio de viajes accesibles en Next.js, con contenido bilingüe, formularios, bib
    | `AUTH_SECRET` | Secreto aleatorio de al menos 32 caracteres. |
    | `ADMIN_EMAIL` | Correo de la primera administradora. |
    | `ADMIN_PASSWORD` | Contraseña privada de 8 a 256 caracteres; usa una contraseña larga y única. |
+   | `STRIPE_SECRET_KEY` | Clave privada de Stripe (`sk_test_...` para pruebas, `sk_live_...` en producción). |
+   | `STRIPE_WEBHOOK_SECRET` | Secreto `whsec_...` del endpoint de Stripe para `/api/stripe/webhook`. |
+   | `NEXT_PUBLIC_APP_URL` | URL pública canónica, por ejemplo `https://coinspira.mx`, usada en los retornos de Checkout. |
 
    No añadas prefijos `NEXT_PUBLIC_`. Si Vercel solicita un prefijo para las variables de la integración, conserva `DATABASE_URL` o configura un alias con ese nombre.
 5. Haz **Redeploy** desde Deployments para que el despliegue reciba las nuevas variables.
@@ -60,4 +63,4 @@ npm run db:admin
 
 No se importan automáticamente archivos SQLite ni usuarios locales de la versión anterior. Antes del cambio, la base local tenía un usuario y no tenía datos operativos; el usuario de producción se crea con las nuevas credenciales.
 
-El panel `/admin` gestiona solicitudes, textos, publicaciones, contactos, citas y registros manuales de pagos. La biblioteca pública está en `/historias` y muestra únicamente publicaciones activadas en el admin; `/explorar` conserva compatibilidad mediante redirección. El registro de pagos no constituye una pasarela de cobro. `index.html` conserva el sitio original como referencia.
+El panel `/admin` gestiona solicitudes, textos, publicaciones, contactos, citas y pagos. La biblioteca pública está en `/historias` y muestra únicamente publicaciones activadas en el admin; `/explorar` conserva compatibilidad mediante redirección. Para cobrar: registra un pago, usa **Crear enlace Stripe** y comparte el enlace copiado. Configura en Stripe un webhook a `https://tu-dominio/api/stripe/webhook` para los eventos `checkout.session.completed` y `checkout.session.async_payment_succeeded`; ese webhook es quien marca el pago como pagado. `index.html` conserva el sitio original como referencia.

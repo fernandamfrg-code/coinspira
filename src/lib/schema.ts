@@ -9,5 +9,7 @@ export const schema = [
     "CREATE TABLE IF NOT EXISTS appointments (id TEXT PRIMARY KEY, contact_id TEXT NOT NULL REFERENCES crm_contacts(id), title TEXT NOT NULL, starts_at TEXT NOT NULL, duration_min INTEGER NOT NULL DEFAULT 30, status TEXT NOT NULL DEFAULT 'tentativa', notes TEXT NOT NULL DEFAULT '', created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP, updated_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP)",
     'CREATE INDEX IF NOT EXISTS appointments_starts_at_idx ON appointments(starts_at)',
     "CREATE TABLE IF NOT EXISTS payments (id TEXT PRIMARY KEY, contact_id TEXT NOT NULL REFERENCES crm_contacts(id), concept TEXT NOT NULL, amount_cents INTEGER NOT NULL CHECK(amount_cents > 0), currency TEXT NOT NULL DEFAULT 'MXN', method TEXT NOT NULL DEFAULT 'transferencia', status TEXT NOT NULL DEFAULT 'pendiente', reference TEXT NOT NULL DEFAULT '', notes TEXT NOT NULL DEFAULT '', paid_at TIMESTAMPTZ, created_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP, updated_at TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP)",
+    'ALTER TABLE payments ADD COLUMN IF NOT EXISTS stripe_session_id TEXT',
+    'ALTER TABLE payments ADD COLUMN IF NOT EXISTS stripe_payment_intent_id TEXT',
     'CREATE INDEX IF NOT EXISTS payments_contact_id_idx ON payments(contact_id)'
 ];

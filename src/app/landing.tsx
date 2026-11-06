@@ -14,6 +14,13 @@ export default function Landing({ overrides }: { overrides: Record<string, { es:
     const disposeHeroReveal = hero ? mountHeroReveal(hero) : undefined;
     let lang = 'es';
     const controller = new AbortController();
+    const navigation = container.querySelector('.header-actions');
+    if (navigation && !navigation.querySelector('[data-library-link]')) {
+      const link = document.createElement('a');
+      link.className = 'nav-link';
+      link.dataset.libraryLink = 'true';
+      navigation.insertBefore(link, navigation.querySelector('.header-cta'));
+    }
     function translate() {
       document.documentElement.lang = lang;
       setLocale(lang as 'es' | 'en');
@@ -23,6 +30,7 @@ export default function Landing({ overrides }: { overrides: Record<string, { es:
         if (value !== undefined) el.textContent = value;
       });
       container.querySelectorAll<HTMLAnchorElement>('a[data-cms="text-106"]').forEach(link => { link.href = lang === 'en' ? '/historias?lang=en' : '/historias'; });
+      container.querySelectorAll<HTMLAnchorElement>('a[data-library-link]').forEach(link => { link.href = lang === 'en' ? '/historias?lang=en' : '/historias'; link.textContent = lang === 'en' ? 'Stories' : 'Historias'; });
       container.querySelectorAll<HTMLElement>('.lang button').forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
     }
     container.querySelectorAll<HTMLInputElement>('input,select,textarea').forEach((el, i) => {
