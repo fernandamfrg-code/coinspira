@@ -19,7 +19,7 @@ export default function Landing({ overrides }: { overrides: Record<string, { es:
       const link = document.createElement('a');
       link.className = 'nav-link';
       link.dataset.libraryLink = 'true';
-      navigation.insertBefore(link, navigation.querySelector('.header-cta'));
+      navigation.insertBefore(link, navigation.querySelector('.nav-link'));
     }
     function translate() {
       document.documentElement.lang = lang;
@@ -30,7 +30,7 @@ export default function Landing({ overrides }: { overrides: Record<string, { es:
         if (value !== undefined) el.textContent = value;
       });
       container.querySelectorAll<HTMLAnchorElement>('a[data-cms="text-106"]').forEach(link => { link.href = lang === 'en' ? '/historias?lang=en' : '/historias'; });
-      container.querySelectorAll<HTMLAnchorElement>('a[data-library-link]').forEach(link => { link.href = lang === 'en' ? '/historias?lang=en' : '/historias'; link.textContent = lang === 'en' ? 'Stories' : 'Historias'; });
+      container.querySelectorAll<HTMLAnchorElement>('a[data-library-link]').forEach(link => { link.href = lang === 'en' ? '/historias?lang=en' : '/historias'; link.textContent = lang === 'en' ? 'Inspiration' : 'Inspiración'; });
       container.querySelectorAll<HTMLElement>('.lang button').forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
     }
     container.querySelectorAll<HTMLInputElement>('input,select,textarea').forEach((el, i) => {
