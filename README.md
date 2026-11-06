@@ -18,6 +18,7 @@ Sitio de viajes accesibles en Next.js, con contenido bilingüe, formularios, bib
    | `STRIPE_SECRET_KEY` | Clave privada de Stripe (`sk_test_...` para pruebas, `sk_live_...` en producción). |
    | `STRIPE_WEBHOOK_SECRET` | Secreto `whsec_...` del endpoint de Stripe para `/api/stripe/webhook`. |
    | `NEXT_PUBLIC_APP_URL` | URL pública canónica, por ejemplo `https://coinspira.mx`, usada en los retornos de Checkout. |
+   | `BLOB_READ_WRITE_TOKEN` | Se agrega automáticamente al crear un Blob Store público en Vercel → Storage → Blob. Permite subir imágenes desde el editor. |
 
    No añadas prefijos `NEXT_PUBLIC_`. Si Vercel solicita un prefijo para las variables de la integración, conserva `DATABASE_URL` o configura un alias con ese nombre.
 5. Haz **Redeploy** desde Deployments para que el despliegue reciba las nuevas variables.
@@ -63,4 +64,4 @@ npm run db:admin
 
 No se importan automáticamente archivos SQLite ni usuarios locales de la versión anterior. Antes del cambio, la base local tenía un usuario y no tenía datos operativos; el usuario de producción se crea con las nuevas credenciales.
 
-El panel `/admin` gestiona solicitudes, textos, publicaciones, contactos, citas y pagos. La biblioteca pública está en `/historias` y muestra únicamente publicaciones activadas en el admin; `/explorar` conserva compatibilidad mediante redirección. Para cobrar: registra un pago, usa **Crear enlace Stripe** y comparte el enlace copiado. Configura en Stripe un webhook a `https://tu-dominio/api/stripe/webhook` para los eventos `checkout.session.completed` y `checkout.session.async_payment_succeeded`; ese webhook es quien marca el pago como pagado. `index.html` conserva el sitio original como referencia.
+El panel `/admin` gestiona solicitudes, textos, publicaciones, contactos, citas y pagos. La biblioteca pública está en `/historias` y muestra únicamente publicaciones activadas en el admin; `/explorar` conserva compatibilidad mediante redirección. Crea un Blob Store **público** llamado, por ejemplo, `images` en Vercel → Storage → Blob para habilitar el botón de imagen del editor: el archivo se sube directamente desde el navegador (JPG, PNG, WebP o GIF, hasta 8 MB) y su URL se inserta sola en la historia. Para cobrar: registra un pago, usa **Crear enlace Stripe** y comparte el enlace copiado. Configura en Stripe un webhook a `https://tu-dominio/api/stripe/webhook` para los eventos `checkout.session.completed` y `checkout.session.async_payment_succeeded`; ese webhook es quien marca el pago como pagado. `index.html` conserva el sitio original como referencia.
